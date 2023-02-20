@@ -1,0 +1,29 @@
+.panel {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  background-color: #aea79f;
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  padding-right: 2vmin;
+}
+.panel button {
+  box-shadow: 1px 1px 2px lightgray;
+  width: 4vmin;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid gray;
+  margin-top: 0.6vmin;
+  margin-bottom: 0.6vmin;
+  text-align: center;
+  margin-left: 4px;
+}
+.panel .close {
+  background-color: red;
+}
+.panel .restore {
+  background-color: orange;
+}
+.panel .minimize {
+  background-color: limegreen;
+}

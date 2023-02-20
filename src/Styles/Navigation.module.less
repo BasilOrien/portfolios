@@ -1,0 +1,34 @@
+@import url("./index.less");
+.nav {
+  grid-row-start: 2;
+  background-color: @navColor;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  .nav__ul {
+    display: flex;
+    margin-top: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    height: 100%;
+  }
+  .nav__ul__li {
+    margin-top: 1rem;
+    &:last-child {
+      margin-top: auto;
+      margin-bottom: 1vmin;
+    }
+  }
+  .nav__profile_picture {
+    border-radius: 100px;
+    width: 8vmin;
+  }
+  .nav__icon {
+    font-size: 8vmin;
+  }
+  .nav__icon_briefcase {
+    color: white;
+  }
+}

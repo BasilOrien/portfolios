@@ -1,0 +1,17 @@
+.home {
+  background-color: white;
+  box-shadow: 1px 1px 5px lightgray;
+  height: auto;
+  color: black;
+  margin: 10vmin;
+  border-radius: 10px;
+}
+.home h3 {
+  font-size: 5vmin;
+  margin-bottom: 2vmin;
+  margin-top: 4vmin;
+}
+.home p {
+  font-size: 3vmin;
+  line-height: 25px;
+}
