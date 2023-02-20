@@ -1,7 +1,7 @@
 .home {
   background-color: white;
   box-shadow: 1px 1px 5px lightgray;
-  height: auto;
+  height: 40vh;
   color: black;
   margin: 10vmin;
   border-radius: 10px;
@@ -13,5 +13,17 @@
 }
 .home p {
   font-size: 3vmin;
-  line-height: 25px;
+}
+@media only screen and (max-width:500px) {
+  .home p {
+    font-size: large;
+  }
+  .home p::first-letter {
+    margin-left: 3vmin;
+  }
+}
+@media only screen and (max-width:500px) {
+  .home {
+    height: 80%;
+  }
 }

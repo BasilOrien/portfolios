@@ -1,22 +1,24 @@
 .App {
-   display: grid;
-   grid-template-columns: 10vmin auto;
-   grid-template-rows: 4vmin auto;
-   height: 100vh;   
+  display: grid;
+  grid-template-columns: 10vmin auto;
+  grid-template-rows: 4vmin auto;
+  height: 100vh;
 }
-
+@media only screen and (max-width:500px) {
+  .App {
+    grid-template-columns: 1;
+    grid-template-rows: 7vmin auto 20vmin;
+  }
+}
 .fa-linkedin {
-    color: #0077b5;
+  color: #0077b5;
 }
-
 .fa-whatsapp {
-    color: #25D366;
+  color: #25D366;
 }
-
 .fa-instagram {
-    color: #F56040;
+  color: #F56040;
 }
-
 .fa-bars {
-    color: white;
+  color: white;
 }

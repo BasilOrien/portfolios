@@ -5,6 +5,13 @@
   justify-content: center;
   flex-grow: 1;
 }
+@media only screen and (max-width:500px) {
+  .nav {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
 .nav .nav__ul {
   display: flex;
   margin-top: auto;
@@ -14,12 +21,21 @@
   list-style: none;
   height: 100%;
 }
-.nav .nav__ul__li {
-  margin-top: 1rem;
+@media only screen and (max-width:500px) {
+  .nav .nav__ul {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
-.nav .nav__ul__li:last-child {
-  margin-top: auto;
-  margin-bottom: 1vmin;
+.nav .nav__ul__li {
+  margin: auto;
+}
+@media only screen and (max-width:500px) {
+  .nav .nav__ul__li {
+    margin: 0;
+  }
 }
 .nav .nav__profile_picture {
   border-radius: 100px;

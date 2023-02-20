@@ -2,10 +2,16 @@
   grid-column-start: 2;
   grid-row-start: 2;
   background-image: url("../Img/backgroundimg.jpg");
-  background-color: green;
+  background-size: cover;
   overflow: auto;
   color: white;
 }
 .main section {
   padding: 5vmin;
+}
+@media only screen and (max-width:500px) {
+  .main {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }

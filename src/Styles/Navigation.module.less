@@ -1,10 +1,16 @@
 @import url("./index.less");
 .nav {
   grid-row-start: 2;
+
   background-color: @navColor;
   display: flex;
   justify-content: center;
   flex-grow: 1;
+  @media @phone {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
   .nav__ul {
     display: flex;
     margin-top: auto;
@@ -13,12 +19,17 @@
     justify-content: center;
     list-style: none;
     height: 100%;
+    @media @phone {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
   }
   .nav__ul__li {
-    margin-top: 1rem;
-    &:last-child {
-      margin-top: auto;
-      margin-bottom: 1vmin;
+    margin: auto;
+    @media @phone {
+      margin: 0;
     }
   }
   .nav__profile_picture {

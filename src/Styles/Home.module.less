@@ -1,7 +1,8 @@
+@import url('./index.less');
 .home {
   background-color: white;
   box-shadow: 1px 1px 5px lightgray;
-  height: auto;
+  height: 40vh;
   color: black;
   margin: 10vmin;
   border-radius: 10px;
@@ -11,7 +12,17 @@
     margin-top: 4vmin;
   }
   p {
+    
+
     font-size: 3vmin;
-    line-height: 25px;
+    @media @phone {
+      font-size: large;
+      &::first-letter {
+        margin-left: 3vmin;
+      }
+    }
+  }
+  @media @phone {
+    height: 80%;
   }
 }

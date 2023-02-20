@@ -6,3 +6,9 @@
   justify-content: space-around;
   background-color: #202020;
 }
+@media only screen and (max-width:500px) {
+  .statusbar {
+    grid-row-start: 1;
+    height: 100%;
+  }
+}

@@ -6,17 +6,31 @@
   border-radius: 10px 10px 0 0;
   width: 100%;
   padding-right: 2vmin;
+  padding-top: 1vmin;
+  padding-bottom: 1vmin;
+}
+@media only screen and (max-width:500px) {
+  .panel {
+    padding-right: 2vmin;
+    padding-top: 2vmin;
+    padding-bottom: 2vmin;
+  }
 }
 .panel button {
   box-shadow: 1px 1px 2px lightgray;
-  width: 4vmin;
   border-radius: 10px;
   outline: none;
   border: 1px solid gray;
-  margin-top: 0.6vmin;
-  margin-bottom: 0.6vmin;
   text-align: center;
-  margin-left: 4px;
+  width: 6vmin;
+  height: 2vmin;
+}
+@media only screen and (max-width:500px) {
+  .panel button {
+    width: 6vmin;
+    height: 6vmin;
+    margin-right: 1vmin;
+  }
 }
 .panel .close {
   background-color: red;

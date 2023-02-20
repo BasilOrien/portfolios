@@ -52,6 +52,16 @@ export default function Nav() {
             icon={faInstagram}
           />
         </li>
+
+
+
+
+
+
+
+
+
+        
         <li className={Styles.nav__ul__li}>
           <FontAwesomeIcon
             className={`${Styles.nav__social_icon} ${Styles.nav__icon}`}
